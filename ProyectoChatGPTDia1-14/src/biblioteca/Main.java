@@ -32,5 +32,12 @@ public class Main {
 		} catch (LibroNoDisponibleException e) {
 			e.printStackTrace();
 		}
+		
+		try {
+			biblioteca.mostrarLibrosDisponibles();
+			biblioteca.buscarLibro("El Señor");
+		} catch (LibroNoDisponibleException e) {
+			e.printStackTrace();
+		}
 	}
 }
